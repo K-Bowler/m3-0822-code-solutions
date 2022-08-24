@@ -17,22 +17,18 @@ const traits = [
   { trainer: 'ash' }
 ];
 
-const total = 0;
-
 const sum = numbers.reduce((x, y) => (x + y));
 const product = numbers.reduce((x, y) => (x * y));
 
-function accountBalance(total) {
-  return account.reduce((x, y) => {
-    if (x.type) {
-      total = x.amount + y.amount;
-    } else if (y.type === 'withdrawal') {
-      total = total - y.amount;
-    } else if (y.type === 'deposit') {
-      total = total + y.amount;
+function accountBalance() {
+  return account.reduce((total, transaction) => {
+    if (transaction.type === 'withdrawal') {
+      total = total - transaction.amount;
+    } else {
+      total = total + transaction.amount;
     }
     return total;
-  });
+  }, 0);
 }
 const balance = accountBalance();
 const composite = traits.reduce((x, y) => Object.assign(x, y));
