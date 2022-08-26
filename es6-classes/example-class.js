@@ -5,10 +5,7 @@
 // const example = new ExampleClass();
 
 class ExampleClass {
-  constructor(example) {
-    this.example = example;
-    return example;
-  }
+
 }
 
 const example = new ExampleClass();
