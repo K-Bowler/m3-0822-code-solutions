@@ -1,0 +1,43 @@
+.container {
+  max-width: 750px;
+  margin: 20px auto;
+}
+
+.row {
+  display: flex;
+}
+
+.switch-on {
+  left: 11.7rem;
+}
+
+.button-container {
+  width: 60px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 2rem;
+  position: relative;
+}
+
+.button-circle {
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  background-color: white;
+}
+
+.mono-font {
+  font-size: 1.5rem;
+  font-family: monospace;
+  margin: 0 10px;
+}
+
+.bg-green {
+  background-color: rgb(8 187 8);
+}
+
+.bg-white {
+  background-color: white;
+}
